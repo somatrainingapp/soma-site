@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soma Training · Força funcional com kettlebell</title>
+<meta name="description" content="Soma Training: treino de força funcional online com kettlebell e peso do corpo. Aulas ao vivo, três níveis e app. Fale conosco pelo WhatsApp ou e-mail.">
+<meta property="og:title" content="Soma Training">
+<meta property="og:description" content="Soma Training: treino de força funcional online com kettlebell e peso do corpo. Aulas ao vivo, três níveis e app. Fale conosco pelo WhatsApp ou e-mail.">
+<meta property="og:image" content="https://somatraining.com.br/img/press.jpg">
+<meta property="og:url" content="https://somatraining.com.br/">
+<meta name="theme-color" content="#0D0B08">
+<link rel="icon" href="img/logo-soma.jpg">
+<link rel="preload" href="fontes/anton-400.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fontes/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+<style>
+/* Layout: página única, escura como as artes da semana; fotos do Arthur no quintal com degradê preto; títulos em Anton caixa alta com destaque dourado */
+/* Fontes dentro do site, sem Google Fonts (decisão do Arthur, 24/11/2026); arquivos de licença aberta (OFL) em fontes/ */
+@font-face { font-family: "Anton"; font-weight: 400; font-display: swap; src: url(fontes/anton-400.woff2) format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 400; font-display: swap; src: url(fontes/poppins-400.woff2) format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 500; font-display: swap; src: url(fontes/poppins-500.woff2) format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 600; font-display: swap; src: url(fontes/poppins-600.woff2) format("woff2"); }
+/* Tamanho mínimo de 16 px; só as etiquetas em caixa alta ficam em 13 px (decisão do Arthur, 24/11/2026) */
+:root {
+  --bg: #0D0B08; --surface: #17140F; --line: #2B261D;
+  --ink: #F4EDE0; --muted: #B7AC98; --gold: #E3B341; --gold-deep: #B8860B;
+  --display: "Anton", Impact, "Arial Narrow", sans-serif;
+  --body: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6; }
+img { max-width: 100%; display: block; }
+a { color: var(--gold); }
+a:focus-visible, .btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: .01em; line-height: 1.02; margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(34px, 6vw, 56px); }
+h2 em, h1 em { font-style: normal; color: var(--gold); }
+.eyebrow { font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin: 0 0 12px; }
+.lead { color: var(--muted); max-width: 62ch; margin: 16px 0 0; }
+section { padding-block: 72px; border-top: 1px solid var(--line); }
+
+/* topo */
+.bar { position: sticky; top: 0; z-index: 20; background: rgba(13,11,8,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 10px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+.brand span { font-family: var(--display); font-size: 20px; letter-spacing: .04em; white-space: nowrap; }
+.brand span b { font-weight: 400; color: var(--gold); }
+.nav { display: flex; gap: 22px; align-items: center; }
+.nav a { color: var(--ink); text-decoration: none; font-size: 16px; font-weight: 500; }
+.nav a:hover { color: var(--gold); }
+@media (max-width: 720px) { .nav .hide-sm { display: none; } }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 22px; border-radius: 999px; font-weight: 600; font-size: 16px; text-decoration: none; border: 1px solid var(--gold); white-space: nowrap; }
+.btn.gold { background: var(--gold); color: #17120A; }
+.btn.gold:hover { background: #EDC25E; }
+.btn.ghost { color: var(--ink); border-color: #5A5040; }
+.btn.ghost:hover { border-color: var(--gold); color: var(--gold); }
+.btn.sm { padding: 9px 16px; font-size: 16px; }
+
+/* hero */
+.hero { position: relative; overflow: hidden; border-top: 0; padding: 0; }
+.hero .photo { position: absolute; inset: 0; }
+.hero .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 68% 22%; }
+.hero .photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(13,11,8,.96) 0%, rgba(13,11,8,.82) 42%, rgba(13,11,8,.25) 100%), linear-gradient(0deg, var(--bg) 0%, rgba(13,11,8,0) 30%); }
+.hero .wrap { position: relative; padding-block: 96px 88px; }
+.hero h1 { font-size: clamp(48px, 9vw, 96px); max-width: 11ch; }
+.hero .lead { color: #D9CFBD; font-size: 18px; max-width: 46ch; }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+@media (max-width: 720px) {
+  .hero .photo::after { background: linear-gradient(0deg, rgba(13,11,8,1) 8%, rgba(13,11,8,.78) 55%, rgba(13,11,8,.35) 100%); }
+  .hero .wrap { padding-block: 300px 56px; }
+  .hero .photo img { object-position: 55% 10%; }
+  .brand span { font-size: 17px; }
+}
+
+/* pilares */
+.grid3 { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; margin-top: 36px; }
+@media (max-width: 860px) { .grid3 { grid-template-columns: 1fr; } }
+.pill { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+.pill h3 { font-size: 24px; color: var(--gold); }
+.pill p { margin: 8px 0 0; color: var(--muted); font-size: 16px; }
+
+/* do suor ao silêncio */
+.split { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr); gap: 48px; align-items: center; }
+@media (max-width: 860px) { .split { grid-template-columns: 1fr; gap: 32px; } }
+.steps { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 14px; counter-reset: s; }
+.steps li { display: grid; grid-template-columns: 44px minmax(0,1fr); gap: 14px; align-items: baseline; counter-increment: s; }
+.steps li::before { content: counter(s, decimal-leading-zero); font-family: var(--display); color: var(--gold); font-size: 26px; }
+.steps b { color: var(--ink); }
+.steps span { color: var(--muted); }
+.figure { border-radius: 18px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+.figure img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+
+/* programas */
+.progs { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; margin-top: 36px; }
+@media (max-width: 860px) { .progs { grid-template-columns: 1fr; } }
+.prog { position: relative; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); min-height: 380px; display: flex; align-items: flex-end; }
+.prog img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.prog::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(13,11,8,.97) 35%, rgba(13,11,8,.25) 100%); }
+.prog .txt { position: relative; z-index: 1; padding: 26px; }
+.prog .tag { display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); border-radius: 4px; padding: 2px 8px; }
+.prog h3 { font-size: 34px; margin-top: 12px; }
+.prog p { color: #D9CFBD; margin: 10px 0 0; font-size: 16px; }
+
+/* galeria */
+.strip { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; }
+.strip img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 12px; }
+@media (max-width: 720px) { .strip { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+
+.checks { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 12px; max-width: 70ch; }
+.checks li { padding-left: 28px; position: relative; color: #D9CFBD; }
+.checks li::before { content: ""; position: absolute; left: 0; top: .55em; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--gold); }
+
+.app { background: linear-gradient(135deg, #1E180F, #0D0B08); border: 1px solid var(--line); border-radius: 20px; padding: 36px; display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 24px; align-items: center; }
+@media (max-width: 720px) { .app { grid-template-columns: 1fr; padding: 26px; } }
+.app .soon { font-size: 16px; color: var(--muted); }
+
+.contact { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; margin-top: 32px; }
+@media (max-width: 900px) { .contact { grid-template-columns: 1fr; } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: grid; gap: 6px; }
+.card .k { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.card .v { font-size: 18px; font-weight: 600; color: var(--ink); overflow-wrap: anywhere; }
+.card .btn { justify-self: start; margin-top: 10px; }
+
+footer { border-top: 1px solid var(--line); padding-block: 36px 48px; color: var(--muted); font-size: 16px; }
+footer .wrap { display: grid; gap: 10px; }
+footer b { color: var(--ink); font-weight: 600; }
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#topo"><img src="img/logo-soma.jpg" alt="Logo do Soma Training"><span>SOMA <b>TRAINING</b></span></a>
+    <nav class="nav" aria-label="Seções">
+      <a class="hide-sm" href="#metodo">Método</a>
+      <a class="hide-sm" href="#programas">Programas</a>
+      <a class="hide-sm" href="#contato">Contato</a>
+      <a class="btn gold sm" href="https://wa.me/5511976226583">Fale conosco</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div class="photo"><img src="img/press.jpg" alt="Arthur levantando o kettlebell acima da cabeça, ajoelhado, num quintal com plantas"></div>
+    <div class="wrap">
+      <p class="eyebrow">Kettlebell + corpo. Em qualquer lugar.</p>
+      <h1>Força para a <em>vida real</em>.</h1>
+      <p class="lead">Treino de força funcional online, com kettlebell e o peso do próprio corpo. Aulas ao vivo e um app para treinar no seu ritmo.</p>
+      <div class="ctas">
+        <a class="btn gold" href="https://wa.me/5511976226583">Quero treinar no Soma</a>
+        <a class="btn ghost" href="#metodo">Conheça o método</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="metodo">
+    <div class="wrap">
+      <p class="eyebrow">O que é o Soma</p>
+      <h2>Um método para <em>a vida inteira</em>.</h2>
+      <p class="lead">O Soma Training é um método de treino para ganhar força, mobilidade e fôlego para a vida real: levantar do chão, carregar peso, subir escadas, viver com autonomia. Você treina em casa ou onde estiver, com um kettlebell e o seu corpo.</p>
+      <div class="grid3">
+        <div class="pill"><h3>Força funcional</h3><p>Movimentos que o corpo usa todo dia: agachar, empurrar, puxar, carregar e levantar do chão.</p></div>
+        <div class="pill"><h3>Três níveis</h3><p>Cada treino tem Iniciante, Intermediário e Avançado. Cada pessoa faz o seu, no mesmo treino.</p></div>
+        <div class="pill"><h3>Corpo e presença</h3><p>Toda sessão começa na respiração e termina em silêncio. Treinar também é voltar para si.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Como é uma sessão</p>
+        <h2>Do suor ao <em>silêncio</em>.</h2>
+        <ol class="steps">
+          <li><div><b>Respiração</b> <span>para chegar.</span></div></li>
+          <li><div><b>Preparação</b> <span>do quadril, da coluna e dos ombros.</span></div></li>
+          <li><div><b>Construção:</b> <span>o movimento novo aprendido passo a passo, antes de entrar no relógio.</span></div></li>
+          <li><div><b>Blocos de trabalho:</b> <span>força, fôlego e core.</span></div></li>
+          <li><div><b>Fecho</b> <span>com alongamento e a Pausa em silêncio, alguns minutos de quietude para terminar.</span></div></li>
+        </ol>
+      </div>
+      <div class="figure"><img src="img/pausa.jpg" alt="Ilustração dourada de uma pessoa meditando, símbolo do Soma"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div class="figure"><img src="img/squat-to-stand.jpg" alt="Arthur em agachamento profundo com os braços para cima"></div>
+      <div>
+        <p class="eyebrow">Para quem é</p>
+        <h2>Para treinar com <em>segurança e constância</em>.</h2>
+        <p class="lead">O Soma nasceu para mulheres a partir dos 40 anos que querem treinar com segurança e constância. O método é aberto a qualquer adulto, do primeiro treino ao avançado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="programas">
+    <div class="wrap">
+      <p class="eyebrow">Programas</p>
+      <h2>Escolha por <em>onde começar</em>.</h2>
+      <div class="progs">
+        <article class="prog">
+          <img src="img/goblet-squat.jpg" alt="" aria-hidden="true">
+          <div class="txt"><span class="tag">8 semanas · no seu ritmo</span><h3>Porta de Entrada</h3><p>Oito semanas para começar com segurança: técnica, força de base e fôlego. Três treinos por semana, no seu ritmo: o próximo treino é sempre o que você ainda não fez.</p></div>
+        </article>
+        <article class="prog">
+          <img src="img/side-plank.jpg" alt="" aria-hidden="true">
+          <div class="txt"><span class="tag">Aula ao vivo · 3 níveis</span><h3>Global Soma</h3><p>O treino da turma Soma: todas fazem o mesmo treino do dia, cada uma no seu nível (Iniciante, Intermediário ou Avançado). Três treinos principais por semana, com aula ao vivo, e treinos curtos de mobilidade e core nos outros dias. Ciclos de oito semanas, com marcas para você comparar a sua evolução.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Fotos de treino">
+    <div class="wrap strip">
+      <img src="img/press.jpg" alt="Desenvolvimento com kettlebell, ajoelhado">
+      <img src="img/goblet-squat.jpg" alt="Agachamento segurando o kettlebell no peito">
+      <img src="img/side-plank.jpg" alt="Prancha lateral com rotação">
+      <img src="img/glute-bridge.jpg" alt="Ponte de quadril no tapete">
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Segurança em primeiro lugar</p>
+      <h2>Técnica antes de <em>volume</em>.</h2>
+      <ul class="checks">
+        <li>Progressão cuidadosa: nenhum movimento novo entra sem ser construído antes.</li>
+        <li>Três níveis em todo treino e opção sem impacto para quem precisa.</li>
+        <li>O Soma não substitui avaliação médica. Antes de começar, se você tem alguma condição de saúde, converse com o seu médico.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="app">
+        <div>
+          <p class="eyebrow">O app Soma Training</p>
+          <h2>O treino do dia <em>na sua mão</em>.</h2>
+          <p class="lead">O app reúne os programas, os vídeos de cada movimento, o relógio do treino e o seu registro. Ele está em fase de testes e chega em breve à Google Play e à App Store.</p>
+        </div>
+        <a class="btn gold" href="https://wa.me/5511976226583">Quero ser avisada</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Quem conduz</p>
+      <h2>Arthur Medeiros <em>de Oliveira</em></h2>
+      <p class="lead">Criador do método Soma. Bacharel em Educação Física (CREF 197128-G/SP), professor de Yoga e de práticas de respiração e meditação.</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap">
+      <p class="eyebrow">Fale conosco</p>
+      <h2>Vamos <em>conversar</em>?</h2>
+      <p class="lead">Tire suas dúvidas sobre os programas, as aulas ao vivo e o app.</p>
+      <div class="contact">
+        <div class="card"><span class="k">WhatsApp</span><span class="v">+55 11 97622-6583</span><a class="btn gold sm" href="https://wa.me/5511976226583">Chamar no WhatsApp</a></div>
+        <div class="card"><span class="k">E-mail</span><span class="v">contato@somatraining.com.br</span><a class="btn ghost sm" href="mailto:contato@somatraining.com.br">Escrever um e-mail</a></div>
+        <div class="card"><span class="k">Instagram</span><span class="v">@somatrainingintegrativo</span><a class="btn ghost sm" href="https://www.instagram.com/somatrainingintegrativo/">Seguir no Instagram</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Soma Training Integrativo LTDA</b>
+    <div id="identificacao-fornecedor"><span>Identificação do Fornecedor</span><br>CNPJ <span style="white-space:nowrap">69.586.124/0001-05</span><br>Sede: Rua Carneiro Leão, <span style="white-space:nowrap">290</span>, Apartamento <span style="white-space:nowrap">164</span>, Bloco <span style="white-space:nowrap">01</span>, Brás, São Paulo/SP, CEP <span style="white-space:nowrap">03040-902</span><br>Local de atendimento: Guarujá/SP</div>
+    <span>contato@somatraining.com.br · © 2026 Soma Training</span>
+  </div>
+</footer>
+
+</body>
+</html>
